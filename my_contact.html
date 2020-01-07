@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Details</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background-color:#bbded6">
+  <table width="60%" style="background-color:#8ac6d1" align="center" cellpadding="10">
+    <tr align="center">
+
+      <th><a href="index.html">
+          Home</a></th>
+      <th><a href="projects.html">
+          Projects</a>
+      </th>
+      <th> <a href="my_contact.html">
+          Contact Me</a>
+      </th>
+
+    </tr>
+  </table>
+
+  <h3>
+    Contact Details
+  </h3>
+  <pre>
+    Auldmurroch Drive
+    Milngavie, Glasgow
+    G627SB
+  </pre>
+
+  <hr>
+  <br>
+  <form action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="post">
+
+    <fieldset>
+      <legend>Personal Details: </legend>
+
+      <br>
+
+      <label for="yourName">Name: </label>
+      <input id="yourName" type="text" name="yourName" placeholder="Enter Your Name">
+      <br>
+      <br>
+      <label for="city">City: </label>
+      <input id="city" type="text" name="yourcity" placeholder="Enter Your City">
+      <br>
+      <br>
+      <label for="number">Phone: </label>
+      <input id="number" type="tel" name="yourNumber" placeholder="Enter Your Phone">
+      <br>
+      <br>
+      <label for="email">Email: </label>
+      <input id="email" type="email" name="yourEmail" placeholder="Enter Your Email">
+      <br>
+      <br>
+      <label for="course">Course: </label>
+      <input id="course" type="text" name="yourCourse" placeholder="Enter Your Course Intrest">
+      <br>
+      <br>
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Appointment Day: (Checkbox Options)</legend>
+
+      <br>
+
+      <label for="monday">Monday: </label>
+      <input id="monday" type="checkbox" name="monday" value="Monday">
+      <label for="tuesday">Tuesday: </label>
+      <input id="tuesday" type="checkbox" name="tuesday" value="Tuesday">
+      <label for="wednesday">Wednesday: </label>
+      <input id="wednesday" type="checkbox" name="wednesday" value="Wednesday">
+      <label for="thursday">Thursday: </label>
+      <input id="thursday" type="checkbox" name="thursday" value="Thursday">
+      <label for="friday">Friday: </label>
+      <input id="friday" type="checkbox" name="friday" value="Friday">
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Appointment Day: (Radio Options)</legend>
+
+      <br>
+
+      <label for="monday1">Monday: </label>
+      <input id="monday1" type="radio" name="week" value="Monday">
+      <label for="tuesday1">Tuesday: </label>
+      <input id="tuesday1" type="radio" name="week" value="Tuesday">
+      <label for="wednesday1">Wednesday: </label>
+      <input id="wednesday1" type="radio" name="week" value="Wednesday">
+      <label for="thursday1">Thursday: </label>
+      <input id="thursday1" type="radio" name="week" value="Thursday">
+      <label for="friday1">Friday: </label>
+      <input id="friday1" type="radio" name="week" value="Friday">
+
+    </fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Dropdown List (we are using Datalist)</legend>
+
+      <br>
+
+      <label for="services">Services:</label>
+      <input list="servicestypes" name="services" placeholder="Select" size="30">
+      <datalist id="servicestypes" class="">
+
+        <option value="Consultation"></option>
+        <option value="Contact"></option>
+        <option value="Employed"></option>
+
+      </datalist>
+
+    </fieldset>
+
+<br>
+
+<fieldset>
+  <legend>optgroup: </legend>
+
+  <label for="prof">Choose a dinosaur:</label>
+    <select  id="prof" size="1" name="level">
+        <optgroup label="Experienced">
+            <option>Exp. Level 1</option>
+            <option>Exp. Level 2</option>
+            <option>Exp. Level 3</option>
+        </optgroup>
+        <optgroup label="Starting">
+            <option>Start Level 1</option>
+            <option>Start Level 2</option>
+            <option>Start Level 3</option>
+        </optgroup>
+    </select>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+  <legend>optgroup using multiple: </legend>
+
+  <label for="prog-mu">Choose a dinosaur:</label>
+    <select multiple  size="9" id="prog-mu" name="level-multiple">
+        <optgroup label="Experienced">
+          <option>Exp. Level 1</option>
+          <option>Exp. Level 2</option>
+          <option>Exp. Level 3</option>
+        </optgroup>
+        <optgroup label="Starting">
+          <option>Start Level 1</option>
+          <option>Start Level 2</option>
+          <option>Start Level 3</option>
+        </optgroup>
+    </select>
+
+</fieldset>
+
+    <br>
+
+    <br>
+    <br>
+
+
+
+
+    <label for="message">Message: </label><br>
+    <textarea id="message" name="Message" rows="10" cols="50" placeholder="Enter your message"></textarea>
+
+
+    <br>
+    <input type="submit" value="Submit">
+
+  </form>
+
+
+</body>
+
+</html>
